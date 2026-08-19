@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student internship form</h1>
+    <form action="/internregister" method="post">
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required><br>
+
+        <label for="Phone">phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dateofbirth" placeholder="Enter date of birth"><br>
+
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required><br>
+
+        <label for="course">Course:</label>
+        <select name="course" id="course" placeholder="Select course"><br>
+            <option value="cs">Computer Science</option>
+            <option value="it">Information Technology</option>
+            <option value="ec">Electronics and Communication</option>
+            <option value="me">Mechanical</option>
+        </select><br>
+
+        <label for="gender">Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" value="male" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" value="female" name="gender" id="female">
+        <label for="others">Others</label>
+        <input type="radio" value="others" name="gender" id="others"> <br>
+
+        <label for="skills">Skills:</label><br> 
+        <input type="checkbox" id="" name="" value="">      
+        <label for="java">Java</label><br>
+        <input type="checkbox" id="" name="" value="">  
+        <label for="HTML">HTML</label><br>
+        <input type="checkbox" id="" name="" value="">  
+        <label for="JS">JavaScript</label><br>
+        <input type="checkbox" id="" name="" value="">  
+        <label for="CSS">CSS</label><br>
+
+        <label for="preference" >Preference:</label>
+        <label for="remote">remote</label>
+        <input type="radio" value="remote" name="preference" id="remote">
+        <label for="onsite">onsite</label>  
+        <input type="radio" value="onsite" name="preference" id="onsite">
+        <label for="hybrid">hybrid</label>
+        <input type="radio" value="hybrid" name="preference" id="hybrid"><br>
+
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" name="resume" placeholder="Upload resume"><br>
+
+        <label for="coverletter">Cover Letter:</label>
+        <input type="textarea " id="coverletter" name="coverletter" placeholder=" cover letter"><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
