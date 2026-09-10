@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:30vw;
+            height:80vh;
+            background-color:cadetblue;
+        }
+        .box{
+            height:100px;
+            width:100px;    
+            background-color:rgb(255, 204, 0);
+            /*animation-name: box-animation;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 3;
+            animation-direction: reverse; 
+            
+            can be replaced by a shorthand property given below */
+
+            animation: box-animation 1s ease-out 3;
+        }
+        @keyframes box-animation{
+            from{
+                background-color: aliceblue;
+            }
+            to{
+                background-color: rgb(246, 126, 71);
+                transform:translateX(300px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box"></div>
+</body>
+</html>
