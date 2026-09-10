@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .cards-container{
+            max-width: 800px;
+            background-color:rgb(238, 239, 240);
+            font-family:sans-serif;
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:50px;
+            justify-items: center;
+            margin:0 auto;
+           }
+        .movie-card{
+            width:200px;
+            border: 1px solid;
+            border-color:#e5e7eb;
+            background-color:rgb(243, 243, 243);
+            border-radius:16px;
+            overflow:hidden;
+            display:flex;
+            flex-direction:column;
+            transition:all 0.2s; 
+            animation:Cardanimation 0.6s ease ;
+            
+        }
+        
+        .movie-card:hover{
+            box-shadow: 10px 10px 10px 10px  rgb(27, 40, 5);
+            transform:scaleY(1.1);
+        }
+        .movie-image img{
+            width:100%;
+            height:auto;
+            object-fit:cover;
+            display:flex;
+            flex-direction: row;
+        }
+        .movie-title{
+            font-weight:600;
+
+        }
+        .movie-info{
+            padding:8px;
+        }
+        .movie-detail{
+            color:gray;
+        }
+        .button:hover{
+            color:aqua;
+            background-color: rgb(162, 94, 3);
+        }
+        .button{
+            text-align:center;
+            font-family:sans-serif;
+            margin:20px 0px;
+            border-radius: 10px;
+            background-color: black;
+            color:aliceblue;
+            height:50px;
+            width:100px;
+            border:1px;
+        }
+        .headbutton{
+            text-align:right;
+
+        }
+        @keyframes animate{
+            from{
+                opacity: 1;
+                transform: rotateX('angle');
+
+            }
+            to{
+                transform:rotateX('angle');
+            }
+        }
+        @keyframes Cardanimation {
+            from{
+                opacity: 0;
+                transform:translateY(30px);  /*positive upward ,negative downward*/
+
+            }
+            to{
+                opacity: 1;
+                transform:translateY(0px);
+            }
+
+        }
+        .movie-card:nth-child(1){
+            animation-delay:0.1s;
+        }
+         .movie-card:nth-child(2){
+            animation-delay:0.2s;;
+        }
+         .movie-card:nth-child(3){
+            animation-delay:0.3s;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="headbutton">
+            <button style="background-color: rgb(13, 103, 16);color:rgb(221, 219, 219)"><h2>Booking Confirmed</h2></button>
+        
+    </div>
+    <div class="cards-container">
+        <div class="movie-card">
+            
+            <div class="movie-image">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS43LzEwICA0OUsrIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00507738-kfbeunsutt-portrait.jpg">
+            </div>
+            <div class="movie-info">
+                <div class="movie-title">Hanuman Ansh</div>
+                <span class="movie-detail">devotional/drama</span>
+                <br>
+                <button class="button"> Book Now </button>
+
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MTY5SysgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00417686-slhjzpafpd-portrait.jpg">
+            </div>
+            <div class="movie-info">
+                <div class="movie-title">Mirzapur: the movie</div>
+                <span class="movie-detail">action/crime/thriller</span>
+                <br>
+                <button class="button"> Book Now </button>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MS42TSsgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00378770-aqvqxdpnut-portrait.jpg">
+            </div>
+            <div class="movie-info">
+                <div class="movie-title">Toxic: A fairy tale for grown-ups</div>
+                <span class="movie-detail">action/crime/period/thriller</span>
+                <br>
+                <button class="button"> Book Now </button>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC8xMCAgODUuNEsrIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00439318-xckxsyyekr-portrait.jpg">
+            </div>
+            <div class="movie-info">
+                <div class="movie-title">Awarapan 2</div>
+                <span class="movie-detail">action/crime/romantic</span>
+                <br>
+                <button class="button"> Book Now </button>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC8xMCAgODUuNEsrIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00439318-xckxsyyekr-portrait.jpg">
+            </div>
+            <div class="movie-info">
+                <div class="movie-title">Awarapan 2</div>
+                <span class="movie-detail">action/crime/romantic</span>
+                <br>
+               <button class="button"> Book Now </button>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MTY5SysgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00417686-slhjzpafpd-portrait.jpg">
+            </div>
+            <div class="movie-info">
+                <div class="movie-title">Mirzapur: the movie</div>
+                <span class="movie-detail">action/crime/thriller</span>
+                <br>
+                <button class="button"> Book Now </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
