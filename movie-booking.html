@@ -5,6 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        header {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 25px;
+
+    background-color: white;
+
+    border-bottom: 1px solid #eee;
+
+    font-family: sans-serif;
+}
+
+
+.header-left {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.logo span {
+    display: block;
+
+    font-size: 7px;
+    letter-spacing: 1px;
+
+    text-align: center;
+}
+
+
+.location {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding-left: 15px;
+
+    border-left: 1px solid #ddd;
+}
+
+.location-icon {
+    font-size: 24px;
+    color: #6845e8;
+}
+
+.location strong {
+    display: block;
+
+    font-size: 14px;
+}
+
+.location small {
+    display: block;
+
+    font-size: 11px;
+    color: #666;
+}
+
+
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #222;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    padding: 10px 14px;
+
+    border-radius: 20px;
+
+    transition: background-color 0.2s ease;
+}
+
+
+
+.nav-links .active {
+    background-color: #eee7ff;
+    color: #5935d5;
+}
+
+
+
+.nav-links a:hover {
+    background-color: #f2f2f2;
+}
+
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+
+.search {
+    font-size: 28px;
+
+    color: #5935d5;
+
+    cursor: pointer;
+}
+
+
+.profile {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #e5e7eb;
+
+    color: white;
+
+    cursor: pointer;
+}
+.logo img{
+    filter: invert();
+    width: 108px;
+    height: auto;
+}
             .cards-container{
             max-width: 800px;
             background-color:rgb(238, 239, 240);
@@ -167,11 +318,71 @@
 
         }
 
+        @media (max-width:460px){
+            .cards-container{
+                grid-template-columns:1fr;
+
+            }
+        }
+        
+        @media (max-width:768px){
+            .cards-container{
+                grid-template-columns:repeat(2,1fr);
+                
+            }
+        }
+
+
 
 
     </style>
 </head>
 <body>
+    <header class="header">
+
+    <div class="header-left">
+
+        <div class="logo">
+            <img src="https://b.zmtcdn.com/data/edition_assets/17466982242413.svg"alt="logo">
+        </div>
+
+        <div class="location">
+            <span class="location-icon">⌖</span>
+
+            <div>
+                <strong>Gurugram</strong>
+                <small>Haryana</small>
+            </div>
+        </div>
+
+    </div>
+
+
+    <nav class="nav-links">
+
+        <a href="#" class="active">For you</a>
+        <a href="#">Dining</a>
+        <a href="#">Movies</a>
+        <a href="#">Events</a>
+        <a href="#">Comedy</a>
+        <a href="#">Stores</a>
+        <a href="#">Activities</a>
+        <a href="#">Play</a>
+
+    </nav>
+
+
+    <div class="header-right">
+
+        <span class="search">⌕</span>
+
+        <div class="profile">
+            ♙
+        </div>
+
+    </div>
+
+</header>
     
     <div class="cards-container">
         <div class="movie-card">
@@ -188,7 +399,7 @@
                     </span>
 
                     <span class="tooltip">
-                        Rating based on user reviews
+                        book your tickets now 
                     </span>
 
                 </div>
@@ -211,7 +422,7 @@
                     </span>
 
                     <span class="tooltip">
-                        Rating based on user reviews
+                       book your tickets now 
                     </span>
 
                 </div>
@@ -233,7 +444,7 @@
                     </span>
 
                     <span class="tooltip">
-                        Rating based on user reviews
+                         book your tickets now 
                     </span>
 
                 </div>
@@ -255,7 +466,7 @@
                     </span>
 
                     <span class="tooltip">
-                        Rating based on user reviews
+                         book your tickets now 
                     </span>
 
                 </div>
@@ -277,7 +488,7 @@
                     </span>
 
                     <span class="tooltip">
-                        Rating based on user reviews
+                        book your tickets now 
                     </span>
 
                 </div>
@@ -299,7 +510,7 @@
                     </span>
 
                     <span class="tooltip">
-                        Rating based on user reviews
+                         book your tickets now 
                     </span>
 
                 </div>
