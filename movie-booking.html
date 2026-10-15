@@ -167,7 +167,7 @@
             margin:0 auto;
            }
         .movie-card{
-            width:200px;
+            width:100%;
             border: 1px solid;
             border-color:#e5e7eb;
             background-color:rgb(243, 243, 243);
@@ -288,6 +288,7 @@
         
         .notification {
             position: fixed;
+            opacity: 0;
 
             top: 20px;
             right: 20px;
@@ -318,19 +319,32 @@
 
         }
 
-        @media (max-width:460px){
-            .cards-container{
-                grid-template-columns:1fr;
-
-            }
-        }
-        
+       
         @media (max-width:768px){
             .cards-container{
                 grid-template-columns:repeat(2,1fr);
                 
             }
         }
+        @media (max-width:460px){
+            .cards-container{
+                grid-template-columns:1fr;
+                justify-content: space-between;
+
+            }
+            .nav-links{
+                display:none;
+            }
+            .location{
+                display:none;
+            }
+            .header{
+                justify-content: space-between;
+                height:60px;
+                padding: 20px;
+            }
+        }
+        
 
 
 
