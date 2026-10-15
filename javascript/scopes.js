@@ -53,7 +53,7 @@ function fn(){
         var price=50
 
 }
-console.log("price",price)// price is changed to 50 which is not good to happen 
+console.log("price",price)// price is changed to 50 which is not ethical to happen 
 
 }
 fn();

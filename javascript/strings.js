@@ -23,12 +23,14 @@ console.log(url.replace("/","_"))
 
 console.log(string2.slice(2,4))
 
+// literals
+
 const userName="priya"
 const repoCount=20
 
 console.log("my name is :"+userName)
 
-console.log(`"my name is : ${userName} and my repo count:${repoCount}`)
+console.log(`"my name is : ${userName} and my repo count:${repoCount}`)//using string template
 
 
 
